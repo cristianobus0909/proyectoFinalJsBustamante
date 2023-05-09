@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    padding: 30px;
+    height: 100px;
+    background-color: rgb(224, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h1{
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifS;
+    color: yellow;
+}
+
+.shopMarket{
+    display: grid;
+    width: 90vw;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 33%) ;
+    grid-template-rows: repeat(2, 50%);
+    grid-auto-rows: 250px;
+    gap: 10px;
+    
+}
+.cardProd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: solid 2px;
+    border-radius: 20px;
+}
+.cardProd img{
+    height: 70%;
+    width: auto;
+    
+}
+.comprar{
+    background-color: rgb(39, 39, 163);
+    color: white;
+    font-size: 25px;
+    border-radius: 50px;
+    transition: 200ms;
+}
+.comprar:hover{
+    background-color: grey;
+}
+
+.verCarrito{
+    cursor: pointer;
+}
+.borrarProd{
+    cursor: pointer;
+}
+.carritoCompra{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.carritoCompra::-webkit-scrollbar{
+    display: none;
+}
+.modalContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+.modalContent img {
+    height: 120px;
+    width: 120px;
+}
+.modal{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+.modalTitulo{
+    justify-self: start;
+}
+.botonXCarrito{
+    cursor: pointer;
+}
+.cantidadCarrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
+.totalCompra {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.sumar {
+    cursor: pointer;
+}
+
+.restar {
+    cursor: pointer;
+}
+.deleteProduct {
+    cursor: pointer;
+}
