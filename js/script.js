@@ -21,19 +21,19 @@ const getProductos = async() => {
         `;
         // Agregamos el elemento gondola al elemento market
         market.appendChild(gondola);
-    
+
         // Creamos un botón comprar para cada producto
         let comprar = document.createElement("button");
         comprar.className = "comprar";
         comprar.innerText = "comprar";
-    
+
         // Agregamos el botón comprar al elemento gondola
         gondola.appendChild(comprar);
-        
+
         // Agregamos un evento click al botón comprar que agrega el producto al carrito
         comprar.addEventListener("click", () => {
             const repeat = carrito.some((repeatProduct) => repeatProduct.id === prod.id);
-        
+
             // Si el producto ya está en el carrito, aumentamos su cantidad
             repeat ? carrito.map((producto) => producto.id === prod.id && producto.cantidad++) : carrito.push({
                 // Si el producto no está en el carrito, lo agregamos
@@ -43,8 +43,22 @@ const getProductos = async() => {
                 precio: prod.precio,
                 cantidad: prod.cantidad,
             }) && (console.log(carrito), console.log(carrito.length), cuentaCarrito(), guardarLocal());
+
+            Toastify({
+                text: `Agregaste el producto ${prod.nombre} al carrito `,
+                duration: 1500,
+                newWindow: true,
+                close: true,
+                gravity: "top",
+                position: "right", 
+                stopOnFocus: true,
+                style: {
+                background: "linear-gradient(to right, #0091b6, #43ef0a",
+                },
+                onClick: function(){}
+            }).showToast();
         });
-        
+
     });
 };
 

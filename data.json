@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nombre":"leche",
+        "nombre":"Leche",
         "unidad":"1L",
         "precio":"250",
         "img":"./img/11155.jpg",
@@ -9,15 +9,15 @@
     },
     {
         "id": 2,
-        "nombre":"huevo",
-        "unidad":"maple",
+        "nombre":"Huevo",
+        "unidad":"12 u",
         "precio":"1300",
         "img":"./img/20201069.webp",
         "cantidad": 1
     },
     {
         "id": 3,
-        "nombre":"aceite",
+        "nombre":"Aceite",
         "unidad":"1L",
         "precio":"1800",
         "img":"./img/9423.jpg",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "nombre":"fideo",
+        "nombre":"Fideo",
         "unidad":"1L",
         "precio":"500",
         "img":"./img/431_1.jpg",
@@ -33,16 +33,16 @@
     },
     {
         "id": 5,
-        "nombre":"harina",
-        "unidad":"1kg",
+        "nombre":"Harina",
+        "unidad":"1Kg",
         "precio":"250",
         "img":"./img/1112-MAROLIO-HARINA-000-1-KG.png",
         "cantidad": 1
     },
     {
         "id": 6,
-        "nombre":"carne",
-        "unidad":"1kg",
+        "nombre":"Carne",
+        "unidad":"1Kg",
         "precio":"1600",
         "img":"./img/cocinar-la-carne-de-vacuno.jpg",
         "cantidad": 1

@@ -60,14 +60,14 @@ const pintarCarrito = ()=>{
             eliminarProducto(prod.id);
             Toastify({
                 text: `Eliminaste el producto ${prod.nombre} del carrito `,
-                duration: 2000,
+                duration: 3000,
                 newWindow: true,
                 close: true,
                 gravity: "top",
                 position: "right", 
                 stopOnFocus: true,
                 style: {
-                background: "linear-gradient(to right, #F9C74F, #004C6Cd)",
+                background: "linear-gradient(to right, #0091b6, #013be9",
                 },
                 onClick: function(){}
             }).showToast();
